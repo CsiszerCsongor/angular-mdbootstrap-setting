@@ -111,14 +111,14 @@ ERROR in node_modules/@types/node/index.d.ts:73:11 - error TS2300: Duplicate ide
             ~~~~~~~~~~~~~~
     'IteratorResult' was also declared here.
 ```
-Két library "összeakadt". Erre rákeresve kaptam (mivel nem volt időm tűzetesen átnézni, hogy mi lehet ennek a hátterében, ezért nem tudom leírni, hogy miért épp ezt a parancsot kellett, viszont működött ezek után. Annyi tudok, hogy a TypeScript declaration fájljaihoz lehet köze ) - ( https://stackoverflow.com/a/57984660 ) :
+Két library "összeakadt". Erre rákeresve kaptam (mivel nem volt időm tűzetesen átnézni, hogy mi lehet ennek a hátterében, ezért nem tudom leírni, hogy miért épp ezt a parancsot kellett, viszont működött ezek után. Annyit tudok, hogy a TypeScript declaration fájljaihoz lehet köze ) - ( https://stackoverflow.com/a/57984660 ) :
 ```
     npm install --save-dev @types/node
 ```
-De mivel ezzel is ugyanazt a hibát kaptam, a kommentek között tovább kutakodva azt láttam, hogy a @type/node-nak a verziószámát kell növelnem:
+De mivel ezzel is ugyanazt a hibát kaptam, a kommentek között tovább kutakodva azt láttam, hogy a `@type/node`-nak a verziószámát kell növelnem:
 ```
     npm update --save-dev @types/node
 ```
 Az utolsó alternatívája, hogy beszúrom a `tsconfig.json` fájlba ezt a sort: `"skipLibCheck": true` ( https://stackoverflow.com/a/60090933 )
 
-##És ezután már sikeresen lefordult nekem. 
+## És ezután már sikeresen lefordult nekem. 
