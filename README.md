@@ -55,7 +55,7 @@ node_modules/angular-bootstrap-md/lib/free/cards/mdb-card-body.component.d.ts(6,
 ...
 ```
 
-Ezen a stackoverflow oldalon az olvasható, hogy update-lni kell az angular core-t és a cli-t, mivel nagyobb verzió számú volt egy dependency, mint megengedhető lett volna az adott angular verzióhoz képest(érdekes, hogy nekem viszont nem volt megadva @angular/cdk a package.json fájlban, de gondoltam kipróbálom, lássam mi változik):
+Ezen a stackoverflow oldalon az olvasható, hogy update-lni kell az angular core-t és a cli-t, mivel nagyobb verzió számú volt egy dependency, mint megengedhető lett volna az adott angular verzióhoz képest(érdekes, hogy nekem viszont nem volt megadva `@angular/cdk` a `package.json` fájlban, de gondoltam kipróbálom, lássam mi változik):
 ```
 ng update --next @angular/cli --force
 ```
@@ -92,7 +92,7 @@ illetve:
     - @angular/cdk/a11y
 ```
 
-Az 1. error-ra a megoldás itt olvasható: https://stackoverflow.com/a/56865388 Az angular.json fájlban ki kellett venni a ,`"es5BrowserSupport": true` property-t.
+Az 1. error-ra a megoldás itt olvasható: https://stackoverflow.com/a/56865388 Az `angular.json` fájlban ki kellett venni a ,`"es5BrowserSupport": true` property-t.
 
 A 2. error-a a megoldás itt olvasható : https://github.com/angular/components/issues/8306#issuecomment-342852641 . Hiányzott `@angular/cdk` csomag. Erre a következő parancsot írtam be:
 ```
@@ -119,6 +119,6 @@ De mivel ezzel is ugyanazt a hibát kaptam, a kommentek között tovább kutakod
 ```
     npm update --save-dev @types/node
 ```
-Az utolsó alternatívája, hogy beszúrom a tsconfig.json fájlba ezt a sort: `"skipLibCheck": true` ( https://stackoverflow.com/a/60090933 )
+Az utolsó alternatívája, hogy beszúrom a `tsconfig.json` fájlba ezt a sort: `"skipLibCheck": true` ( https://stackoverflow.com/a/60090933 )
 
 ##És ezután már sikeresen lefordult nekem. 
