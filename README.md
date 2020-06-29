@@ -30,7 +30,7 @@ A videóban (https://www.youtube.com/watch?v=m68xvSiuijE) látottak alapján lé
               "./node_modules/hammerjs/hammer.min.js"
             ],
     ```
-  - A fenti részben az mdb-free.scss-t nem töltötte, de nem tudom miért.
+  - A fenti részben az mdb-free.scss-t nem töltötte le, de nem tudom miért.
 - Ha ezekkel a beállításokkal elindítom az angular projektet, akkor a következő hibaüzenetet kapom:
     - `ERROR in No NgModule metadata found for 'AppModule'.`
 
