@@ -29,14 +29,12 @@
             "styles": [
               "./node_modules/font-awesome/scss/font-awesome.scss",
               "./node_modules/angular-bootstrap-md/assets/scss/bootstrap/bootstrap.scss",
-              //"./node_modules/angular-bootstrap-md/assets/scss/mdb-free.scss",
               "src/styles.scss"
             ],
             "scripts": [
               "./node_modules/chart.js/dist/Chart.js",
               "./node_modules/hammerjs/hammer.min.js"
-            ],
-            "es5BrowserSupport": true
+            ]
           },
           "configurations": {
             "production": {
@@ -142,5 +140,8 @@
       }
     }
   },
-  "defaultProject": "frontend"
+  "defaultProject": "frontend",
+  "cli": {
+    "analytics": "f0428a2b-c5ef-4965-959d-4eb2c65e587f"
+  }
 }

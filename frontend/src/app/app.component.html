@@ -1,21 +1,49 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<!-- Card -->
+<div class="card">
 
-<router-outlet></router-outlet>
+  <!-- Card body -->
+  <div class="card-body">
+
+    <!-- Material form register -->
+    <form>
+      <p class="h4 text-center py-4">Sign up</p>
+
+      <!-- Material input text -->
+      <div class="md-form">
+        <i class="fa fa-user prefix grey-text"></i>
+        <input type="text" id="materialFormCardNameEx" class="form-control">
+        <label for="materialFormCardNameEx" class="font-weight-light">Your name</label>
+      </div>
+
+      <!-- Material input email -->
+      <div class="md-form">
+        <i class="fa fa-envelope prefix grey-text"></i>
+        <input type="email" id="materialFormCardEmailEx" class="form-control">
+        <label for="materialFormCardEmailEx" class="font-weight-light">Your email</label>
+      </div>
+
+      <!-- Material input email -->
+      <div class="md-form">
+        <i class="fa fa-exclamation-triangle prefix grey-text"></i>
+        <input type="email" id="materialFormCardConfirmEx" class="form-control">
+        <label for="materialFormCardConfirmEx" class="font-weight-light">Confirm your email</label>
+      </div>
+
+      <!-- Material input password -->
+      <div class="md-form">
+        <i class="fa fa-lock prefix grey-text"></i>
+        <input type="password" id="materialFormCardPasswordEx" class="form-control">
+        <label for="materialFormCardPasswordEx" class="font-weight-light">Your password</label>
+      </div>
+
+      <div class="text-center py-4 mt-3">
+        <button class="btn btn-cyan" type="submit">Register</button>
+      </div>
+    </form>
+    <!-- Material form register -->
+
+  </div>
+  <!-- Card body -->
+
+</div>
+<!-- Card -->
