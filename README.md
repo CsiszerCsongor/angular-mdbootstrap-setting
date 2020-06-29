@@ -1,7 +1,7 @@
 # angular-mdbootstrap-setting
 Angular 7 MDBootstrap beállítása
 
-A videóban (https://www.youtube.com/watch?v=m68xvSiuijE) láttottak alapján létrehoztam egy projektet, viszont elindításkor hibába ütköztem. Ebben kérek segítséget.
+A videóban (https://www.youtube.com/watch?v=m68xvSiuijE) látottak alapján létrehoztam egy projektet, viszont elindításkor hibába ütköztem. Ebben kérek segítséget.
 
 ## A lépések, amikkel létrehoztam a projektet:
 1. `ng new frontend`
@@ -30,7 +30,7 @@ A videóban (https://www.youtube.com/watch?v=m68xvSiuijE) láttottak alapján l�
               "./node_modules/hammerjs/hammer.min.js"
             ],
     ```
-  - A fenti részben az mdb-free.scss-t nem töltötte, de nem tudom miért.
+  - A fenti részben az mdb-free.scss-t nem töltötte le, de nem tudom miért.
 - Ha ezekkel a beállításokkal elindítom az angular projektet, akkor a következő hibaüzenetet kapom:
     - `ERROR in No NgModule metadata found for 'AppModule'.`
 
