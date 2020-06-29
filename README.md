@@ -1,7 +1,7 @@
 # angular-mdbootstrap-setting
 Angular 7 MDBootstrap beállítása
 
-A videóban (https://www.youtube.com/watch?v=m68xvSiuijE) láttottak alapján létrehoztam egy projektet, viszont elindításkor hibába ütköztem. Ebben kérek segítséget.
+A videóban (https://www.youtube.com/watch?v=m68xvSiuijE) látottak alapján létrehoztam egy projektet, viszont elindításkor hibába ütköztem. Ebben kérek segítséget.
 
 ## A lépések, amikkel létrehoztam a projektet:
 1. `ng new frontend`
