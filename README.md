@@ -9,6 +9,7 @@ A videóban (https://www.youtube.com/watch?v=m68xvSiuijE) láttottak alapján l�
 3. `npm i --save angular-bootstrap-md chart.js@2.5.0 font-awesome hammerjs`
 4. Megnyitom az editort és az `app.module.ts` fájlba beírom a következőket
   - Importálom az `MDBBootstrapModule`-t
+  
     - ``` 
           import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
           import { MDBBootstrapModule } from 'angular-bootstrap-md'; 
@@ -18,7 +19,7 @@ A videóban (https://www.youtube.com/watch?v=m68xvSiuijE) láttottak alapján l�
 5. Megnyitom az `angular.json` fájlt
   - A `"styles:"` és a `"script:"` property-ket kibővítem
     - ```
-      "styles": [
+            "styles": [
               "./node_modules/font-awesome/scss/font-awesome.scss",
               "./node_modules/angular-bootstrap-md/assets/scss/bootstrap/bootstrap.scss",
               //"./node_modules/angular-bootstrap-md/assets/scss/mdb-free.scss", - ezt valamért nem töltötte le
@@ -29,4 +30,8 @@ A videóban (https://www.youtube.com/watch?v=m68xvSiuijE) láttottak alapján l�
               "./node_modules/hammerjs/hammer.min.js"
             ],
     ```
-    - A fenti 
+  - A fenti részben az mdb-free.scss-t nem töltötte, de nem tudom miért.
+- Ha ezekkel a beállításokkal elindítom az angular projektet, akkor a következő hibaüzenetet kapom:
+    - `ERROR in No NgModule metadata found for 'AppModule'.`
+
+Kérdésem, hogy ha ugyanazokat a lépéseket megcsináltam mint a videóban, akkor miért kapok én hibát? Mit kell még beállítsak?
